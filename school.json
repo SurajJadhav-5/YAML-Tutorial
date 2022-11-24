@@ -1,0 +1,19 @@
+{
+    "School": [
+        {
+            "name": "Sadhana",
+            "principal": "Jadhav",
+            "students":[
+                {
+                    "rno": 19,
+                    "name": "suraj"
+                },
+                {
+                    "rno": 19,
+                    "name": "ram"
+                }
+
+            ]
+        }
+    ]
+}

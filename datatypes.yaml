@@ -1,0 +1,69 @@
+# String variables
+name: suraj
+fruit: "mango"
+show: 'naruto'
+
+# multiline string
+message: |
+This is multiline string
+You can write many line
+in this way.
+
+# write a single line in multiple lines
+msg: > 
+This is
+a single line 
+only.
+
+# same as 
+msg : This is a single line only.
+
+# int
+number: 233
+# float
+marks: 34.32
+# boolean
+value: No # n, N, false, False, FALSE
+#same for true : y, Y, Yes
+
+# exponential
+exponential: 34.4E43
+
+# Specifing Data types
+# Syntax - !!data_type
+
+zaro: !!int 0
+positiveNum: !!int 45
+negativeNum: !!int -10
+binaryNum: !!int 0b10101110
+octalNum: !!int 03431
+hexaNum: !!int 0x354
+commaValue: !!int +235_897   #235,897
+
+marks: !!float 34.56
+infinite: !!float .inf
+not a number: !!float .nan
+
+name: !!str suraj
+
+booleanVal: !!bool y
+
+# null
+nullValue: !!null Null #null, NULL, ~
+~: this is a null key 
+
+# dates
+date: !!timestamp 2022-11-24
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+# sequence
+
+student: !!seq
+  - name
+  - marks
+  - roll
+
+student: [name, marks, roll]
+
+# some of the keys of the sequence will be empty
+# sparce seq
+sparce seq:
+  - naruto
+  - sasuke
+  -
+  - null
+  - jiraya
+
+
+# nested sequence
+
+fruits:
+  - mango
+  - apple
+  - berry:
+    - blackberry
+    - blueberry
+  - banana
+
+
+# key-value pair is called map
+# !!map
+name: suraj
+
+
+# nested mappings
+name: naruto
+powers:
+  naruto: rasengan
+  sasuke: chidori
+village: leaf
+
+
+# pairs : keys may have duplicate value
+# !!pairs
+pair example: !!pairs
+ - job: student
+ - job: software engineer
+# this will be array if hashtables
+# same as
+pair example: !!pairs [ job: student, job: software engineer]
+
+# !!set will allow only unique values
+names: !!set
+  ? suraj
+  ? dhiraj
+
+
+# dictoary !!omap
+people: !!omap
+  - suraj
+      name: suraj jadhav
+      age: 22
+  - dhiraj
+      name: dhiraj jadhav
+      age: 24
+
+
+# reusing properties using anchors
+likings: &likes
+  fav fruit: mango
+  dislike: grape
+
+person1:
+  name: suraj
+  <<: *likes        # in this way those properties will be added here
+
+person2:
+  name: dhiraj
+  <<: *likes 
+  dislikes: banana     # you can override 
+
+
+
+
+

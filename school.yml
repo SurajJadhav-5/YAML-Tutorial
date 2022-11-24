@@ -1,0 +1,8 @@
+---
+School:
+- name: Sadhana
+  principal: Jadhav
+  students: 
+  - rno: 12
+    name: Suraj
+    marks: 78
